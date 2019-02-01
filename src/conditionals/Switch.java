@@ -1,11 +1,11 @@
 package conditionals;
 
-import libs.Input;
+import libs.Input;//llama un metodo de libs input.
 
 public class Switch {
 
 public static void main(String args[])
-{
+{    System.out.println("Enter a letter\n"); //Añadido System.out.println("Enter a number\n")
 	char c = Input.get_char();
 	switch (c)
 	{

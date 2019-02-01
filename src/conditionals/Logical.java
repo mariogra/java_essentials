@@ -5,7 +5,7 @@ import libs.Input;
 public class Logical {
 
 	public static void main(String args[])
-	{
+	{    System.out.println("Enter a number\n"); //Añadido System.out.println("Enter a number\n")
 		int c = Input.get_char();
 	    if (c == 'Y' || c == 'y')
 	    {

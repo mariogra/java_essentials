@@ -4,7 +4,7 @@ public class Cough4 {
 
 	public static void main(String args[])
 	{
-		cough(3);
+		cough(5);
 	}
 
 	public static void cough(int n)
@@ -21,11 +21,19 @@ public class Cough4 {
 		}
 
 	}
-
+	{
+        sneeze(5);
+	}
 	public static void sneeze(int n)
 	{
-		say("achoo!", n);
+		pay("achoo!", n);
 
 	}
-}
+	public static void pay(String word, int n)
+	{
+		for (int i = 0; i < n; i++)
+		{
+			System.out.print(word + "\n");
+		}
+}}
 
