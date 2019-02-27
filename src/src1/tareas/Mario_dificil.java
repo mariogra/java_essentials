@@ -1,23 +1,21 @@
-Implementa un programa que muestre una piramide doble como la que se muestra abajo.
+package src1.tareas;
 
-$ ./mario
-Altura: 4
-   #  #
-  ##  ##
- ###  ###
-####  ####
+import libs.Input;
 
-
-System.out.println("Ingresa Altura");
+public class Mario_dificil {
+	public static void main(String args[]) {
+	
+	
+	System.out.println("Ingresa Altura");
 	int n = Input.get_int();
    
     //renglon
     for(int x = 0 ;x < n ; x++) {
-    	int esp1 = n -1 - x; 
+    	int esp1 = n  - x; 
 	    int gat1 = n + 1 - esp1;
         int esp2 = 1;
-        int gat2 = n - esp1;
-        int esp3 = n -1 -x ;
+        int gat2 = n  - esp1;
+        int esp3 = n  -x;
         
 			// esp1
 			for( int a = 0 ; a < esp1 ; a++) {	
@@ -28,7 +26,7 @@ System.out.println("Ingresa Altura");
 				System.out.print("#");
 			}
 			//esp2
-			for( int c = 0 ; c <= esp2  ; c++) {
+			for( int c = 0 ; c < esp2  ; c++) {
 				System.out.print(" ");
 			}
 			//gat2
@@ -36,7 +34,9 @@ System.out.println("Ingresa Altura");
 				System.out.print("#");
 			}
 			//esp3
-			for( int e = 0 ; e <= esp3 ; e++) {
+			for( int e = 0 ; e < esp3 ; e++) {
 				System.out.print(" ");
 	      }System.out.println();
 	}}}
+
+

@@ -5,8 +5,8 @@ import libs.Input;//llama un metodo de libs input.
 public class Switch {
 
 public static void main(String args[])
-{    System.out.println("Enter a letter\n"); //Añadido System.out.println("Enter a number\n")
-	char c = Input.get_char();
+{    System.out.println("Enter 'Y', 'y', 'N' or 'n' \n"); //Añadido System.out.println("Enter a number\n")
+	char c = Input.get_char();// toma el valor ingresado, se le asigna a c.
 	switch (c)
 	{
 	case 'Y':

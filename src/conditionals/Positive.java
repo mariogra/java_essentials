@@ -11,7 +11,7 @@ public class Positive {
 		System.out.print(i + " is a positive integer\n");
 	}
 
-	public static int get_positive_int()
+	public static int get_positive_int()//DUDA  como trabaja esta linea.?
 	{
 	    int n;
 	    do
@@ -20,7 +20,7 @@ public class Positive {
 	        n = Input.get_int();
 	    }
 	    while (n < 1);
-	    return n;
+	    return n;//si el valor es menor de 1 se retorna n
 	}
 }
 

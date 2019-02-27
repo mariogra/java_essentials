@@ -20,7 +20,19 @@ public class Input {
 		}
 		return retInt;
 	}
-
+	public static long get_long() {
+		Long retlong = Long.MAX_VALUE;
+		while(retlong.equals(Long.MAX_VALUE)) {
+			try {
+				long i = sc.nextLong();
+				retlong = i;
+			}catch(InputMismatchException ime) {
+				System.out.println("Wrong format for Long Integer. input a correct Long Integer: ");
+				sc = new Scanner(System.in);
+			}
+		}
+		return retlong;
+	}
 	public static float get_float() {
 		Float retFloat = Float.MAX_VALUE;
 		while(retFloat.equals(Float.MAX_VALUE)) {
